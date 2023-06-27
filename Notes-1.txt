@@ -1,0 +1,449 @@
+What is Program?
+ --set of instructions
+
+
+I/P----------------O/P
+Instructions----------output
+
+
+Different based application
+============================
+1.Window based application---Python--Tkinter
+2.Web Based application----Python Django
+3.Android based application
+
+Introduction of Python
+======================
+--Python is a simple,general purpose,high level
+ and object oriented programming language.
+
+--Interpreted Programming language.
+
+It Supports Object oriented Programming approach 
+to develop application.
+
+
+Python History:
+===============
+Python was invented by Guido van Rossum in 1991 
+at CWI in Netherland.
+
+There is also a fact behind the choosing name Python.
+
+Guido van Rossum was a fan of the Popular BBC Comedy Show
+ of the time "Monty Python's Flying Circus" 
+So he decided to pick the name Python for his 
+newly created the Programming language.
+
+Why learn Python?
+=================
+1.Developing WindowBased Application and Web Based Application
+
+2.Easy to use and Learn
+
+3.Interpreted Language
+
+4.Object-oriented language
+
+5.Open Source Language
+
+6.GUI Programming Support
+
+7.Dynamic Memory Allocation
+
+
+Where is Python Used?
+======================
+1.DataScience
+
+2.DataMinig
+
+3.Desktop Application
+
+4.Consolebased application
+
+5.Mobile Application
+
+6.Software Development
+
+7.AI
+
+8.Machine Learning Concepts
+
+
+9.Image Processing
+
+10.Speech Recongnitions
+
+
+Python Popular Frameworks and Libraries
+========================================
+
+--Web development (server side)--Django,Flask,CherryPy
+
+
+--GUI based application--TK,PyGTK,PyQT,PyJS..etc
+
+
+--Machine Learning--TensorFlow,PyTorch,scikit,matplotlib,scipy
+
+--Mathematice---Numpy,Pandas..etc
+
+
+Variables:
+==========
+--To holding the values
+
+a=100
+
+name="azar"
+
+print(a)
+
+print(name)
+
+
+Datatype
+=========
+--A datatype is an allocate the memory of the variable.
+
+
+a=100(integer)
+
+
+name="azar"(String)
+
+
+f1=2.5(fractionvalue)
+
+
+function
+=========
+--pre define function
+print()
+int(input())
+input()
+float(input())
+double(input())
+type()
+
+--user define function---user give as own functions
+
+a=100
+print(a)
+100
+name="mohamed"
+print(name)
+mohamed
+b=2.5
+print(b)
+2.5
+type(a)
+<class 'int'>
+type(name)
+<class 'str'>
+type(b)
+<class 'float'>
+name=input("Enter the value is:")
+Enter the value is:mohamed
+print(name)
+mohamed
+a=input("Enter the a value:")
+Enter the a value:100
+b=input("Enter the b value:")
+Enter the b value:200
+c=a*b
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    c=a*b
+TypeError: can't multiply sequence by non-int of type 'str'
+type(a)
+<class 'str'>
+type(b)
+<class 'str'>
+a=int(input("Enter the a value is:"))
+Enter the a value is:100
+b=int(input("Enter the b value is:"))
+Enter the b value is:200
+c=a+b
+print(c)
+300
+type(a)
+<class 'int'>
+type(b)
+<class 'int'>
+
+
+Operators:
+==========
+--The Operator is a symbol that perform a
+ certain operation between two operands,
+
+Operators----->+,-,*,/
+
+Operands----->a,b,c
+
+c=a+b
+
+Different types of operators:
+=============================
+1.Arithmetic Operators
++,-,/,%,*,//
+
+2.Comparsion
+<,<=,>,>=,==,!= 
+
+3.Assignment 
+=+,=-,=/,=%,=*
+
+4.Logical
+and,or,not
+
+5.Bitwise
+
+&,|,^,~,<<,>>
+
+6.Membership
+in,not in
+
+7.Identity
+
+is,is not,id
+
+a=10
+b=20
+c=a*b
+print(c)
+200
+a=20
+b=10
+c=a%b
+print(c)
+0
+a=10
+b=20
+c=a/b
+c
+0.5
+c=a//b
+c
+0
+a=100
+b=200
+print(a>b)
+False
+print(b<a)
+False
+print(b>a)
+True
+print(a==b)
+False
+print(a!=b)
+True
+True
+
+LogicalAND
+==========
+C1      C2	R
+T	T	T
+T	F	F
+F	T	F
+F	F	F
+
+LogicalOR
+=========
+C1	C2	R
+T	T	T
+T	F	T
+F	T	T
+F	F	F
+
+LogicalNOT
+==========
+C1 	R
+T	F
+F	T
+
+a=100
+b=200
+print((a<b)and(b>a))
+True
+print((a>b)and(b>a))
+False
+print((a>b)and(b<a))
+False
+print((a>b)or(b>a))
+True
+print((a<b)or(b<a))
+True
+print(not(a<b))
+False
+print(not(a>b))
+True
+
+a=100
+b=100
+print(a is b)
+True
+a1=200
+b1=100
+print(a1 is b1)
+False
+id(a)
+140709680508808
+id(b)
+140709680508808
+id(a1)
+140709680512008
+id(b1)
+140709680508808
+
+Python ControlStatements:
+=========================
+--ControlStatement make to given some conditions
+
+1.Branching
+
+2.Looping
+
+1.Branching---is an single time executions
+
+2.Looping----is an iteration process
+
+
+Braching:
+========
+1.if statment
+
+2.if-else statement
+
+3.Nested if-else statement
+
+4.Elif ladder
+
+
+Syntax:
+=======
+if(exp):
+  //code
+
+
+syntax:
+=======
+if(exp-1):
+  //code
+else:
+  //code
+
+
+syntax:
+=======
+if(exp-1):
+    if(exp-2):
+         //code
+    else:
+         //code
+else:
+    //code
+
+
+Syntax:
+=======
+if(exp-1):
+   //code
+elif(exp-2):
+  //code
+elif(exp-3):
+  //code
+else:
+ //code
+
+
+Looping Concepts
+================
+--Iteration Process is an looping
+
+for loop
+Nested for loop
+While loop
+
+Syntax:
+=======
+for <variable> in range(start,stop,step):
+    //code
+
+
+Syntax:
+=======
+for <variable> in range(start,stop,step):
+      for <variable> in range(start,stop,step):
+                 //code
+
+
+Syntax:
+======
+
+inital value:
+while(exp):
+  //code
+  //incr or drc
+
+for k in range(0,10,2):
+          print("k value is::",k)
+
+          
+k value is:: 0
+k value is:: 2
+k value is:: 4
+k value is:: 6
+k value is:: 8
+
+for k in range(1,10,2):
+          print("K value is::",k)
+
+          
+K value is:: 1
+K value is:: 3
+K value is:: 5
+K value is:: 7
+K value is:: 9
+
+for i in range(10):
+          print("I value is::",i)
+
+          
+I value is:: 0
+I value is:: 1
+I value is:: 2
+I value is:: 3
+I value is:: 4
+I value is:: 5
+I value is:: 6
+I value is:: 7
+I value is:: 8
+I value is:: 9
+
+
+Nested for loop
+===============
+for x in range(65,70):
+    for y in range(1,6):
+        print(chr(x),end="")
+    print()
+Reference in Programs
+
+
+Function
+=========
+--A function is divided into small programs
+
+--A function is performed an specific action
+
+
+--Using as keyword called def
+
+
+def <<function>>:
+   //code
+   //function body
+function calling
