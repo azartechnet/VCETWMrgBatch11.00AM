@@ -297,6 +297,26 @@ id(a1)
 140709680512008
 id(b1)
 140709680508808
+price=10000
+print((price>10000))
+False
+print((price>=10000))
+True
+print((price==10000))
+True
+
+print((price!=10000))
+False
+pid=1001
+print((pid>=1001)and(price==10000))
+True
+print((pid>=2001)and(price==10000))
+False
+print((pid>=2001)or(price==10000))
+True
+print(not(pid>=2001))
+True
+
 
 Python ControlStatements:
 =========================
@@ -357,7 +377,9 @@ elif(exp-3):
   //code
 else:
  //code
-
+tot=m1+m2+m3
+tot>900
+"A"
 
 Looping Concepts
 ================
