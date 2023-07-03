@@ -1,0 +1,844 @@
+(01-06-2023)
+Que:
+===
+1.what is Program?
+    --set of instruction
+Develp...
+========
+   1.Windows Based Application--Core Python(tkinter)
+   2.Web Based Application--Python Django(html,css,bootstrap,script)
+   3.Android Based Application--Python
+
+   4.DataAnalysis--DataScience,AI,ML
+
+Variable:
+---------
+Variable is holding some value integer,string,flt,double
+
+name="welcome"
+
+age=33
+
+print("welcome to our session")
+welcome to our session
+print("*****")
+*****
+
+name="abi"
+print("This your name is:",name)
+This your name is: abi
+studid=1001
+print("Your studId is:",studid)
+Your studId is: 1001
+type(studid)
+<class 'int'>
+type(name)
+<class 'str'>
+
+
+Datatype
+========
+A Datatype is allocate the memory for the variables
+
+int,float,double,string,bool
+
+
+Pre-define function to get the runtime input
+=============================================
+1.int(input())
+2.input()
+3.raw_input()
+
+
+salary=input("Ente the salary is:")
+Ente the salary is:1000
+print(salary)
+1000
+salary
+'1000'
+a=input("Enter the value is:")
+Enter the value is:100
+b=input("Enter the b value is:")
+Enter the b value is:200
+c=a*b
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    c=a*b
+TypeError: can't multiply sequence by non-int of type 'str'
+type(a)
+<class 'str'>
+type(b)
+<class 'str'>
+a=int(input("Enter the a value is:")
+      )
+Enter the a value is:100
+b=int(input("Enter the b value is:"))
+Enter the b value is:200
+c=a*b
+print(c)
+20000
+
+(2-06-2023)
+Operators:
+==========
+--Operators are used to perform operations on variables and values.
+
+a,b-->Operands
++,--->Operators
+a+b(add variables)
+a*b(multiple the variables)
+
+
+Different types of operators:
+=============================
+1.Arithmetic operators
+(+,/,-,*,%,**,//)
+2.Assignment operators
+(=,+=,-=,*=,/=,%=,//=,**=,&=,>>=,<<=)
+3.Comparision operators
+(==,!=,>,<,>=,<=)
+4.Logical 
+(and,or,not)
+5.Identity operators
+(is,isnot)
+6.Membership operators
+(in,notin)
+7.Bitwise operators
+(&,|,^,~,<<,>>)
+
+
+a=10
+b=20
+c=a*b
+print(c)
+200
+c=a/b
+print(c)
+0.5
+c=a%b
+print(c)
+10
+c=a//b
+c=a//b
+print(c)
+0
+a=10
+b=20
+print("Equal:",a<b)
+Equal: True
+a=20
+b=20
+print("Equal:",a==b)
+Equal: True
+a1=100
+b1=50
+print("Greater:",a1>b1)
+Greater: True
+
+Realtime Process:
+=================
+if(point<500)
+   dis=100
+elif(point>500)
+   dis=200
+
+
+Logical AND Operators:
+======================
+c1     c2         R
+T	T	  T
+F	T	  F
+T	F	  F
+F	F	  F
+
+
+Logical OR Operators:
+=====================
+c1	c2	R
+T	F	T
+F	T	T
+F	F	F
+T	T	T
+
+Logical NOT
+===========
+c1    R
+T     F
+F     T
+
+
+t1=200
+t2=300
+print((t1<t2)and(t2>t1))
+True
+print((t1>t2)and(t2>t1))
+False
+
+print((t1>t2)or(t2>t1))
+True
+print(not(t1>t2))
+True
+print(not (t2>t1))
+False
+
+
+a=10
+b=10
+print(a is b)
+True
+id(a)
+140705268819016
+id(b)
+140705268819016
+a1=10
+b1=12
+print(a1 is b1)
+False
+id(a1)
+140705268819016
+id(b1)
+140705268819080
+print(a1 is not b1)
+True
+
+
+
+Control Statements:
+===================
+-To check the conditions
+1.Branching
+2.Looping
+
+1.Branching is an single time Execution
+if statment
+if else statement
+nested if else statment
+elif ladders
+
+2.Looping is an iterations process
+while loop
+for loop
+Nested for loop
+
+if statement:
+============
+if(exp-1):
+  //True or False
+
+
+if else statement:
+=================
+if(exp-1):(T)
+   //True
+else:     (F)
+  //false
+
+Nested if else statement:
+========================
+if(exp-1):(T)
+   if(exp-2):(T)
+    //code-2
+   else:
+    //code-3
+else:
+  //code-1
+
+elif ladder statement:
+======================
+if(exp-1):
+  //code
+elif(exp-2):
+  //code
+elif(exp-3):
+ //code
+else:
+ //code
+
+Python Forloop:
+==============
+--A for loop is used for iterating over a sequence
+--To loop through a set of code a sepecfied number of times,We can use the range() function.
+
+Syntax:
+=======
+range(start,stop,step)
+
+for i in range(10):
+              (0,10,1):
+for i in range(10):
+    print("I value is:",i)
+
+    
+I value is: 0
+I value is: 1
+I value is: 2
+I value is: 3
+I value is: 4
+I value is: 5
+I value is: 6
+I value is: 7
+I value is: 8
+I value is: 9
+
+for i in range(1,5,1):
+    print("I value is:",i)
+
+    
+I value is: 1
+I value is: 2
+I value is: 3
+I value is: 4
+for k in range(1,10,2):
+    print("K value is:",k)
+
+    
+K value is: 1
+K value is: 3
+K value is: 5
+K value is: 7
+K value is: 9
+
+(for each statment)
+seq=["mohamed","azar","livewire"]
+for x in seq:
+    print(x)
+
+    
+mohamed
+azar
+livewire
+
+seq=["mohamed","azar","livewire"]
+for x in seq:
+    print(x)
+    if x=="azar":
+        break
+
+    
+mohamed
+azar
+seq=["mohamed","azar","livewire"]
+for x in seq:
+    print(x)
+    if x=="azar":
+        continue
+    print(x)
+
+    
+mohamed
+mohamed
+azar
+livewire
+livewire
+
+
+seq=["mohamed","azar","livewire"]
+for x in seq:
+    print("for loop:",x)
+    if x=="azar":
+        continue
+    print("if stmt:",x)
+
+While loop:
+===========
+intital value:
+while(exp):
+  //code
+  //inc or drc
+
+
+
+05-06-2023
+==========
+Functions:
+==========
+A function doing some particular task and
+ A large Program divided into small Program
+
+def functionname():
+   //code
+
+functioncall()
+
+
+def Sample()://function name
+    print("welcome to the sample function")//function defination
+Sample()//function call
+
+
+def checkProduct():
+    pid=int(input("Enter the pid is:"))
+    if pid==1001:
+        print("It is equal")
+    else:
+        print("It is not equal")
+def checkCategory():
+    cid=int(input("Enter the cid:"))
+    if cid==2001:
+        print("It is equal")
+    else:
+        print("It is not equal")
+checkProduct()
+checkCategory()
+
+def addProduct(pid,pname):#argument passing to the function
+    print("Your pid is:",pid,"Your pname is:",pname)
+addProduct(1001,"apple")#passing the value on functions
+    
+    
+Python Exceptions:
+=================
+--When a Python Program meets an error,
+it stops the execution of the rest of the Program.
+
+--We will learn about trying 
+ and except blocks and how to raise exception
+ and make assertions
+
+--Exception is handle the normal flow of execution
+
+There are two different type of exceptions:
+
+==========================================
+1.Checked Exception
+2.UnChecked Exception
+
+1.Checked Exception--Compile time Exception
+2.Unchecked Exception-Runtime Exception
+
+Types of Exception classes:
+===========================
+1.ArithmeticError
+2.ZeroDivisionError
+3.ImportError
+4.IndexError
+5.KeyError
+6.NameError
+7.Exception
+8.OverflowError
+
+Syntax:
+=======
+try:
+  //code
+except <<classname>>:
+ //code
+except <<classname>>:
+ //code
+except <<classname>>:
+ //code
+
+
+def Sample():
+    try:
+        a=int(input("Enter the value is:"))
+        b=a/0
+    except ArithmeticError:
+        print("Please check the value")
+def Demo():
+    print("Welcome to the Demo function")
+Sample()
+Demo()
+
+def fun1():
+    try:
+        pid=int(input("Enter the value is:"))
+        print("your pid is:",pid)
+    except ValueError as e1:
+        print(e1)
+fun1()
+
+06-06-2023
+==========
+OOPS Concepts:
+==============
+---An object-oriented programming system is to design the Program using classes and objects.
+
+---The object is related to real-word entities such as book,house,pencil...
+
+--The oops concepts focuses on writing the reusable code.
+
+class
+
+object
+
+method
+
+Inheritance
+
+Polymorphism
+
+DataAbstraction
+
+Encapsulation
+
+
+Syntax:
+======
+class className:
+   
+   function():
+      //code
+
+//creating the object of the classes
+
+ class Sample:
+    def fun1(self):
+        print("Welcome to the fun1 concepts")
+    def fun2(self):
+        print("welcome to the fun2 concepts")
+s1=Sample()#creating the object
+s1.fun1()#To invoke the function
+s1.fun2()
+
+class Product:
+    def addProduct(self):
+        pid=int(input("Enter the pid value is:"))
+        pname=input("Enter the pname is:")
+        print("Your Pid is::",pid)
+        print("Your pname is::",pname)
+    def addCategory(self):
+        cid=int(input("Enter the cid value is:"))
+        print("Your Cid is::",cid)
+d1=Product()
+d1.addProduct()
+d1.addCategory()
+        
+
+class Employee:
+    def __init__(self):#default method
+        print("Your default method")
+    def addEmployee(self):#Normal method-1
+        self.empid=int(input("Enter the value is:"))
+        self.empname=input("Enter the empname is:")
+        
+    def viewEmployee(self):#Normal method-2
+        print("Your data is:",self.empid,self.empname)
+        
+e1=Employee()#Object Creations
+e1.addEmployee()#To inject the functions
+e1.viewEmployee()
+
+
+class Category:
+    def __init__(self,cid,cname):#default method
+        self.cid=cid
+        self.cname=cname
+    def display(self):#Normal method
+        print(self.cid,self.cname)
+c1=Category(1001,"mobile")
+c1.display()
+
+
+07-06-2023
+==========
+Python Tkinter
+==============
+Tkinter is the standard GUI library for Python
+
+Python when combined with Tkinter provides a fast and easy way to create GUI Application.
+
+Tkinter provides basics and advanced concepts of Python Tkinter.
+
+Python Provides the standard library Tkinter for creating the Graphical User Interface for desktop 
+based application.
+
+
+1.import the Tkinter module
+
+2.Create the main application windows
+
+3.Add the widgets like labels,buttons,frames...etc to the windows
+
+4.Call the main event loop so that the action can take place on the user's computer screen.
+
+
+There are various widgets like button,canvas,checkbutton,entry..etc that are used to build the Python GUI Application
+
+1.Button
+
+2.Canvas
+
+3.Checkbutton
+
+4.Entry
+
+5.Frame
+
+6.Label
+
+7.ListBox
+
+8.Menubutton
+
+9.Menu
+
+10.Message
+
+11.Radiobutton
+
+12.Scale
+
+13.Scrollbar
+
+14.Text
+
+15.Toplevel
+
+16.Spinbox
+
+17.MessageBox
+
+Python Tkinter:
+==============
+Tkinter Provides the following geometry methods
+1.pack()
+2.grid()
+3.place()
+
+pack()
+======
+The pack() widget is used to organize widgets in the block.
+
+
+widget.pack(options)
+
+from tkinter import*
+parent=Tk()
+redbutton=Button(parent,text="Red",fg="red")
+redbutton.pack(side=LEFT)
+greenbutton=Button(parent,text="Black",fg="black")
+greenbutton.pack(side=RIGHT)
+bluebutton=Button(parent,text="Blue",fg="blue")
+bluebutton.pack(side=TOP)
+blackbutton=Button(parent,text="Green",fg="red")
+blackbutton.pack(side=BOTTOM)
+parent.mainloop()
+
+
+08-06-2023
+==========
+
+grid()
+======
+The grid() geometry manger organizes the widgets in the tabular form.We can specify the rows and columns as the options in the method.
+
+widget.grid(options)
+from tkinter import *
+p=Tk()
+name=Label(p,text="Name").grid(row=0,column=0)
+e1=Entry(p).grid(row=0,column=1)
+password=Label(p,text="Password").grid(row=1,column=0)
+e2=Entry(p).grid(row=1,column=1)
+
+submit=Button(p,text="Submit").grid(row=4,column=0)
+
+rest=Button(p,text="Rest").grid(row=4,column=1)
+p.mainloop()
+
+
+place()method
+=============
+The place geometry manager organize the widgets to the specific x and y co-ordinates
+
+widget.place(options)
+
+from tkinter import *
+t1=Tk()
+t1.geometry("400x250")
+name=Label(t1,text="Name").place(x=30,y=50)
+email=Label(t1,text="Email").place(x=30,y=90)
+password=Label(t1,text="password").place(x=30,y=130)
+e1=Entry(t1).place(x=80,y=50)
+e2=Entry(t1).place(x=80,y=90)
+e3=Entry(t1).place(x=95,y=130)
+submit=Button(t1,text="Submit").place(x=30,y=160)
+Rest=Button(t1,text="Rest").place(x=90,y=160)
+t1.mainloop()
+
+
+Checkbuttton
+============
+The checkbutton is used to tack the user choices provided to the application.In other words we can say that checkbutton is used to implements
+the on/off selections.
+
+
+w=checkbutton(master,options)
+
+Examples:
+=========
+bg,activebackground,cursor,font,fg,height,image..etc
+
+from tkinter import *
+t=Tk()
+t.geometry("200x200")
+checkvar1=IntVar()
+checkvar2=IntVar()
+checkvar3=IntVar()
+
+chkbtn1=Checkbutton(t,text="C",variable=checkvar1,onvalue=1,offvalue=0,height=2,width=10)
+chkbtn2=Checkbutton(t,text="Java",variable=checkvar2,onvalue=1,offvalue=0,height=2,width=10)
+chkbtn1.pack()
+chkbtn2.pack()
+t.mainloop()
+
+
+
+09-06-2023(8day)
+==========
+Python TKinter Menu
+===================
+The Menu widget is used to create various types of menus(top level,pulldown and popup) in the Python Application
+
+Syntax:
+========
+w=Menu(top,options)
+
+activebackground
+
+activeborderwidth
+
+bg
+
+cursor
+
+Methods
+========
+add_command(option)
+
+add_radiobutton(options)
+
+
+add_checkbutton(options)
+
+
+add_cascade(options)
+
+Creating a top level menu
+=========================
+
+from tkinter import *
+
+top=Tk()
+
+def home():
+    print("Home")
+def addproduct():
+    print("addproduct")
+
+#Create a toplevel menu
+
+menubar=Menu()
+menubar.add_command(label="Home",command=home)
+menubar.add_command(label="AddProduct",command=addproduct)
+menubar.add_command(label="AboutUs",command=top.quit)
+
+#display the menu
+top.config(menu=menubar)
+
+top.mainloop()
+
+from tkinter import Toplevel,Button,Tk,Menu
+
+top=Tk()
+
+menubar=Menu(top)
+
+file=Menu(menubar,tearoff=0)
+
+file.add_command(label="New")
+
+file.add_command(label="Open")
+
+file.add_command(label="Save")
+
+file.add_command(label="SaveAs..")
+
+file.add_command(label="Close")
+
+
+file.add_separator()
+
+
+file.add_command(label="Exit",command=top.quit)
+
+
+menubar.add_cascade(label="File",menu=file)
+
+edit=Menu(menubar,tearoff=0)
+
+edit.add_command(label="Undo")
+
+edit.add_separator()
+
+
+
+
+top.config(menu=menubar)
+top.mainloop()
+
+Python Tkinter Canvas
+=====================
+The canvas widget is used to add the structured graphics to the Python application.It is  used to draw the graph and plots to the Python
+application.
+
+Syntax:
+======
+w=canvas(parent,options)
+
+from tkinter import *
+top=Tk()
+top.geometry("200x200")
+#Creating a simple canvas
+
+c=Canvas(top,bg="pink",height="200")
+
+c.pack()
+
+top.mainloop()
+
+
+from tkinter import *
+top=Tk()
+
+top.geometry("200x200")
+
+#Creating a simple canvas
+
+c=Canvas(top,bg="pink",height="200",width=200)
+
+arc=c.create_arc((5,10,150,200),start=0,extent=150,fill="white")
+
+c.pack()
+
+top.mainloop()
+
+Python Tkinter Spinbox
+======================
+--The spinbox widget is an alternative to the Entry widget.It Provides the range of values to the user,out of which,the user can select the one.
+
+from tkinter import *
+
+top=Tk()
+
+top.geometry("200x200")
+
+spin=Spinbox(top,from_=10,to=20)
+
+spin.pack()
+
+top.mainloop()
+
+
+
+Project Explainations:
+=====================
+Project Name:Hotel Management Software
+FrontEnd:Python
+Modules:
+========
+1.CheckINN
+2.Show Guest list
+3.Check out
+4.Get info of any guest
+5.Exit
