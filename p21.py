@@ -4,7 +4,7 @@ top=Tk()
 
 menubar=Menu(top)
 
-file=Menu(menubar,tearoff=0)
+file=Menu(menubar,tearoff=5)
 
 file.add_command(label="New")
 
